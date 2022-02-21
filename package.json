@@ -1,0 +1,27 @@
+{
+    "name": "com",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start": "tsc && node dist/main.js",
+        "serve": "concurrently -n \" Compiler , Watch \" \"tsc -w\" \"nodemon dist/main.js\"",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "axios": "^0.25.0",
+        "cheerio": "^0.22.0",
+        "inquirer": "^8.2.0"
+    },
+    "devDependencies": {
+        "@types/axios": "^0.14.0",
+        "@types/cheerio": "^0.22.30",
+        "@types/inquirer": "^8.2.0",
+        "concurrently": "^7.0.0",
+        "nodemon": "^2.0.15",
+        "typescript": "^4.6.0-dev.20220131"
+    }
+}
